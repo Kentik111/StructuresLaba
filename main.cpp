@@ -223,7 +223,7 @@ int main(int argc, char** argv) {
         if (!myQueue.isEmpty()) {
             cout << "Начальный элемент: " << myQueue.peek() << endl;
         } else {
-            cerr << "Очередь пуста. Нет верхнего элемента." << endl;
+            cerr << "Очередь пуста. Нет начального элемента." << endl;
         }
     } else if (command == "QPRINT") {
         Queue<string> myQueue;
