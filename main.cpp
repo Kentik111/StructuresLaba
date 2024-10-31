@@ -463,6 +463,9 @@ int main(int argc, char** argv) {
         iss >> key >> value;
         HashTable<string, string> ht(10); // Создаем хеш-таблицу
         convertArrayToHashTable(data.elements, data.elementCount, ht);
+        if (ht.contains(key)){
+            ht.remove(key);
+        }
         ht.insert(key, value);
         data.elementCount = 0;
         convertHashTableToArray(ht, data.elements, data.elementCount);
